@@ -2,36 +2,33 @@ import React from "react";
 
 const footer = () => {
   return (
-    <div class="container fixed-bottom">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
+    <div className="container fixed-bottom">
+      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div className="col-md-4 d-flex align-items-center">
           <a
             href="/"
-            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
           >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap" />
-            </svg>
           </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">
-            &copy; 2024 Company, Inc
+          <span className="mb-3 mb-md-0 text-body-secondary">
+            &copy; Salah and Sem waren hier - sinds 2024
           </span>
         </div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#">
-            <i class="fa-brands fa-twitter"></i>
+        <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li className="ms-3">
+            <a className="text-body-secondary" href="#">
+            <i className="fa-brands fa-twitter"></i>
             </a>
           </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#">
-            <i class="fa-brands fa-instagram"></i>
+          <li className="ms-3">
+            <a className="text-body-secondary" href="#">
+            <i className="fa-brands fa-instagram"></i>
             </a>
           </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#">
-            <i class="fa-brands fa-facebook"></i>
+          <li className="ms-3">
+            <a className="text-body-secondary" href="#">
+            <i className="fa-brands fa-facebook"></i>
             </a>
           </li>
         </ul>
