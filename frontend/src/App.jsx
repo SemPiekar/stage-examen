@@ -1,22 +1,30 @@
-import Navbar from "./components/Navbar/Navbar.jsx"
-import StudentDashboard from "./components/StudentDashboard/StudentDashboard.jsx"
-import LeraarDashboard from "./components/LeraarDashboard/LeraarDashboard.jsx"
-import OrganisatorDashboard from "./components/OrganisatorDashboard/OrganisatorDashboard.jsx"
-import { Route, Routes } from "react-router-dom"
+import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Login from "./components/Login/Login";
+import Dashboard from "./components/StudentDashboard/StudentDashboard";
+// Import other components as needed
 
-function App() {
+export default function App() {
+  const [currentUser, setCurrentUser] = useState(null);
+
+  const handleLogin = (user) => {
+    setCurrentUser(user);
+  };
+
   return (
-    <>
-      <Navbar />
-      <div className="container">
-        <Routes>
-          <Route path="/student" element={<StudentDashboard />} />
-          <Route path="/leraar" element={<LeraarDashboard />} />
-          <Route path="/organisator" element={<OrganisatorDashboard />} />
-        </Routes>
-      </div>
-    </>
-  )
+    <div>
+      {!currentUser ? (
+        <Login onLogin={handleLogin} />
+      ) : (
+        <>
+          <Navbar role={currentUser.role} />
+          <Routes>
+            <Route path={`/${currentUser.role}/dashboard`} element={<Dashboard />} />
+            {/* Add routes for other components */}
+          </Routes>
+        </>
+      )}
+    </div>
+  );
 }
-
-export default App

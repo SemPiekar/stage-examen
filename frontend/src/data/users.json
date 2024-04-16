@@ -1,0 +1,23 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "Salah Eddine",
+        "password": "1234",
+        "role": "student"
+      },
+      {
+        "id": 2,
+        "username": "Sem Piekar",
+        "password": "1234",
+        "role": "leraar"
+      },
+      {
+        "id": 3,
+        "username": "Ronald Bruggeling",
+        "password": "1234",
+        "role": "organisator"
+      }
+    ]
+  }
+  
