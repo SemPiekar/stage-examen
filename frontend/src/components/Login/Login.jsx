@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import usersData from "../../data/users.json";
 import Footer from "../footer/footer";
-import { Button } from "react-bootstrap";
 
 export default function Login({ onLogin }) {
   const [username, setUsername] = useState("");
@@ -24,72 +23,53 @@ export default function Login({ onLogin }) {
   };
 
   return (
-    // <div>
-    //   <div className="container mt-5 col-2 d-flex flex-column justify-content-center">
-    //     <h2>iTeachers</h2>
-    //     <form onSubmit={handleSubmit}>
-    //       <div className="input-group mb-3">
-    //         <span className="input-group-text" id="basic-addon1">
-    //           @
-    //         </span>
-    //         <input
-    //           type="text"
-    //           className="form-control"
-    //           id="username"
-    //           value={username}
-    //           placeholder="Username"
-    //           aria-label="Username"
-    //           aria-describedby="basic-addon1"
-    //           onChange={(e) => setUsername(e.target.value)}
-    //         ></input>
-    //       </div>
-    //       <div className="mb-3">
-    //         <label htmlFor="password" className="form-label">
-    //           Password
-    //         </label>
-    //         <input
-    //           type="password"
-    //           className="form-control"
-    //           id="password"
-    //           value={password}
-    //           onChange={(e) => setPassword(e.target.value)}
-    //         />
-    //       </div>
-    //       <Button className="w-100" type="submit" variant="primary" size="lg">
-    //         Inloggen
-    //       </Button>
-    //     </form>
-    //     {showWarning && (
-    //       <div className="alert alert-warning mt-3" role="alert">
-    //         Ongeldige gebruikersnaam of wachtwoord
-    //       </div>
-    //     )}
-    //   </div>
-    //   <Footer />
-    // </div>
-    <main class="form-signin col-2 m-auto vh-100 d-flex flex-column justify-content-center">
-    <form>
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-  
-      <div class="form-floating">
-        <input type="email" class="form-control rounded-bottom-0" id="floatingInput" placeholder="name@example.com"></input>
-        <label for="floatingInput">Email address</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" class="form-control rounded-top-0" id="floatingPassword" placeholder="Password"></input>
-        <label for="floatingPassword">Password</label>
-      </div>
-  
-      <div class="form-check text-start my-3">
-        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault"></input>
-        <label class="form-check-label" for="flexCheckDefault">
-          Remember me
-        </label>
-      </div>
-      <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
-    </form>
-    <Footer />
-  </main>
+    <main className=" form-signin col-2 m-auto vh-100 d-flex flex-column justify-content-center">
+      <form onSubmit={handleSubmit}>
+        <h1 className="mb-3 fw-normal"><i className="fa-sharp fa-solid fa-signal"></i> iTeachers</h1>
+        <div className="form-floating">
+          <input
+            type="text"
+            id="username, floatingInput"
+            value={username}
+            className="form-control rounded-bottom-0"
+            placeholder="Gebruikersnaam"
+            onChange={(e) => setUsername(e.target.value)}
+          ></input>
+          <label for="floatingInput">Gebruikersnaam</label>
+        </div>
+        <div className="form-floating">
+          <input
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            type="password"
+            id="password, floatingPassword"
+            className="form-control rounded-top-0"
+            placeholder="Wachtwoord"
+          ></input>
+          <label for="floatingPassword">Wachtwoord</label>
+        </div>
+
+        <div className="form-check text-start my-3">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            value="remember-me"
+            id="flexCheckDefault"
+          ></input>
+          <label className="form-check-label" for="flexCheckDefault">
+            Onthoud mij
+          </label>
+        </div>
+        <button className="btn btn-primary w-100 py-2" type="submit">
+          Inloggen
+        </button>
+        {showWarning && (
+          <div className="mt-3 alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Holy guacamole!</strong> lijkt erop dat er iets misging met inloggen... groetjes Salah & Sem c:
+        </div>
+        )}
+      </form>
+      <Footer />
+    </main>
   );
 }
