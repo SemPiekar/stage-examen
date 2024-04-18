@@ -1,23 +1,267 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "Salah Eddine",
-        "password": "1234",
-        "role": "student"
-      },
-      {
-        "id": 2,
-        "username": "Sem Piekar",
-        "password": "1234",
-        "role": "leraar"
-      },
-      {
-        "id": 3,
-        "username": "Ronald Bruggeling",
-        "password": "1234",
-        "role": "organisator"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": 1,
+      "username": "Salah Eddine",
+      "password": "1",
+      "role": "student",
+      "class": "1TINB",
+      "email": "salah.eddine@example.com",
+      "dob": "2005-03-12",
+      "address": "Damstraat 12, Amsterdam",
+      "profilePicUrl": "/images/users/salah_eddine.jpg"
+    },
+    {
+      "id": 2,
+      "username": "Sem Piekar",
+      "password": "1",
+      "role": "leraar",
+      "email": "sem.piekar@example.com",
+      "dob": "1980-09-23",
+      "address": "Dag Hammerskjoldlaan 201, Hellevoetsluis",
+      "profilePicUrl": "/images/users/sem_piekar.jpg"
+    },
+    {
+      "id": 3,
+      "username": "Ronald Bruggeling",
+      "password": "1",
+      "role": "organisator",
+      "email": "ronald.bruggeling@example.com",
+      "dob": "1975-06-15",
+      "address": "Oudegracht 245, Utrecht",
+      "profilePicUrl": "/images/users/ronald_bruggeling.jpg"
+    },
+    {
+      "id": 4,
+      "username": "Emma Johnson",
+      "password": "1",
+      "role": "student",
+      "class": "2TINA",
+      "email": "emma.johnson@example.com",
+      "dob": "2004-11-05",
+      "address": "Herengracht 321, Amsterdam",
+      "profilePicUrl": "/images/users/emma_johnson.jpg"
+    },
+    {
+      "id": 5,
+      "username": "John Doe",
+      "password": "1",
+      "role": "leraar",
+      "email": "john.doe@example.com",
+      "dob": "1990-02-17",
+      "address": "Stadhouderslaan 1, The Hague",
+      "profilePicUrl": "/images/users/john_doe.jpg"
+    },
+    {
+      "id": 6,
+      "username": "Alice Smith",
+      "password": "1",
+      "role": "student",
+      "class": "3TINC",
+      "email": "alice.smith@example.com",
+      "dob": "2003-07-29",
+      "address": "Beursplein 1, Rotterdam",
+      "profilePicUrl": "/images/users/alice_smith.jpg"
+    },
+    {
+      "id": 7,
+      "username": "Anna Müller",
+      "password": "1",
+      "role": "leraar",
+      "email": "anna.muller@example.com",
+      "dob": "1985-12-08",
+      "address": "Vismarkt 2, Utrecht",
+      "profilePicUrl": "/images/users/anna_muller.jpg"
+    },
+    {
+      "id": 8,
+      "username": "Mohamed Ali",
+      "password": "1",
+      "role": "student",
+      "class": "4TIND",
+      "email": "mohamed.ali@example.com",
+      "dob": "2002-04-19",
+      "address": "Rokin 1, Amsterdam",
+      "profilePicUrl": "/images/users/mohamed_ali.jpg"
+    },
+    {
+      "id": 9,
+      "username": "Maria García",
+      "password": "1",
+      "role": "leraar",
+      "email": "maria.garcia@example.com",
+      "dob": "1978-10-27",
+      "address": "Frederik Hendriklaan 73, The Hague",
+      "profilePicUrl": "/images/users/maria_garcia.jpg"
+    },
+    {
+      "id": 10,
+      "username": "Ahmed Patel",
+      "password": "1",
+      "role": "student",
+      "class": "5TINE",
+      "email": "ahmed.patel@example.com",
+      "dob": "2001-01-31",
+      "address": "Beursplein 37, Rotterdam",
+      "profilePicUrl": "/images/users/ahmed_patel.jpg"
+    },
+    {
+      "id": 11,
+      "username": "Sophie Smith",
+      "password": "1",
+      "role": "student",
+      "class": "6TINB",
+      "email": "sophie.smith@example.com",
+      "dob": "2000-08-14",
+      "address": "Keizersgracht 456, Amsterdam",
+      "profilePicUrl": "/images/users/sophie_smith.jpg"
+    },
+    {
+      "id": 12,
+      "username": "Liam Brown",
+      "password": "1",
+      "role": "leraar",
+      "email": "liam.brown@example.com",
+      "dob": "1982-03-26",
+      "address": "Neude 1, Utrecht",
+      "profilePicUrl": "/images/users/liam_brown.jpg"
+    },
+    {
+      "id": 13,
+      "username": "Charlotte García",
+      "password": "1",
+      "role": "student",
+      "class": "7TINC",
+      "email": "charlotte.garcia@example.com",
+      "dob": "2003-04-30",
+      "address": "Zadelstraat 10, Utrecht",
+      "profilePicUrl": "/images/users/charlotte_garcia.jpg"
+    },
+    {
+      "id": 14,
+      "username": "Lucas Martinez",
+      "password": "1",
+      "role": "leraar",
+      "email": "lucas.martinez@example.com",
+      "dob": "1976-09-18",
+      "address": "Markt 15, Rotterdam",
+      "profilePicUrl": "/images/users/lucas_martinez.jpg"
+    },
+    {
+      "id": 15,
+      "username": "Emily Johnson",
+      "password": "1",
+      "role": "student",
+      "class": "8TIND",
+      "email": "emily.johnson@example.com",
+      "dob": "2002-11-27",
+      "address": "Singel 100, Amsterdam",
+      "profilePicUrl": "/images/users/emily_johnson.jpg"
+    },
+    {
+      "id": 16,
+      "username": "Ethan Müller",
+      "password": "1",
+      "role": "leraar",
+      "email": "ethan.muller@example.com",
+      "dob": "1987-07-09",
+      "address": "Oudegracht 103, Utrecht",
+      "profilePicUrl": "/images/users/ethan_muller.jpg"
+    },
+    {
+      "id": 17,
+      "username": "Olivia Patel",
+      "password": "1",
+      "role": "student",
+      "class": "9TINE",
+      "email": "olivia.patel@example.com",
+      "dob": "2000-01-15",
+      "address": "Hobbemastraat 1, Amsterdam",
+      "profilePicUrl": "/images/users/olivia_patel.jpg"
+    },
+    {
+      "id": 18,
+      "username": "Noah Smith",
+      "password": "1",
+      "role": "leraar",
+      "email": "noah.smith@example.com",
+      "dob": "1984-05-29",
+      "address": "Lange Poten 1, The Hague",
+      "profilePicUrl": "/images/users/noah_smith.jpg"
+    },
+    {
+      "id": 19,
+      "username": "Ava García",
+      "password": "1",
+      "role": "student",
+      "class": "10TINB",
+      "email": "ava.garcia@example.com",
+      "dob": "2001-08-07",
+      "address": "Korte Poten 10, The Hague",
+      "profilePicUrl": "/images/users/ava_garcia.jpg"
+    },
+    {
+      "id": 20,
+      "username": "William Johnson",
+      "password": "1",
+      "role": "leraar",
+      "email": "william.johnson@example.com",
+      "dob": "1979-12-03",
+      "address": "Kalverstraat 123, Amsterdam",
+      "profilePicUrl": "/images/users/william_johnson.jpg"
+    },
+    {
+      "id": 21,
+      "username": "Sophia Müller",
+      "password": "1",
+      "role": "student",
+      "class": "11TINC",
+      "email": "sophia.muller@example.com",
+      "dob": "2002-02-28",
+      "address": "Leidseplein 21, Amsterdam",
+      "profilePicUrl": "/images/users/sophia_muller.jpg"
+    },
+    {
+      "id": 22,
+      "username": "Alexander Patel",
+      "password": "1",
+      "role": "leraar",
+      "email": "alexander.patel@example.com",
+      "dob": "1977-11-11",
+      "address": "Plein 1945 1, Rotterdam",
+      "profilePicUrl": "/images/users/alexander_patel.jpg"
+    },
+    {
+      "id": 23,
+      "username": "Isabella Smith",
+      "password": "1",
+      "role": "student",
+      "class": "12TIND",
+      "email": "isabella.smith@example.com",
+      "dob": "2001-05-18",
+      "address": "Plein 1953 10, Rotterdam",
+      "profilePicUrl": "/images/users/isabella_smith.jpg"
+    },
+    {
+      "id": 24,
+      "username": "James García",
+      "password": "1",
+      "role": "leraar",
+      "email": "james.garcia@example.com",
+      "dob": "1981-08-02",
+      "address": "Prinsengracht 10, Amsterdam",
+      "profilePicUrl": "/images/users/james_garcia.jpg"
+    },
+    {
+      "id": 25,
+      "username": "Mia Johnson",
+      "password": "1",
+      "role": "student",
+      "class": "13TINE",
+      "email": "mia.johnson@example.com",
+      "dob": "2003-10-25",
+      "address": "Grote Markt 5, Rotterdam",
+      "profilePicUrl": "/images/users/mia_johnson.jpg"
+    }
+  ]
+}
